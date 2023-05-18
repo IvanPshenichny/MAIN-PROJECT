@@ -1,0 +1,11 @@
+.header {
+  height: 70px;
+  background-color: darkgray;
+  width: 100%;
+}
+.header img {
+  margin-left: 9px;
+  padding: 10px;
+  height: 60px;
+  width: 100px;
+}
