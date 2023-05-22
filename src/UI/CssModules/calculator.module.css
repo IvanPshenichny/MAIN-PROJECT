@@ -151,4 +151,6 @@
   z-index: 2;
   margin: 2.4px;
 }
-
+.DoneBlock {
+  background-color: rgb(81, 81, 255);
+}

@@ -6,7 +6,9 @@ import { NavBar } from "./UI/NavBar";
 import { Content } from "./UI/Content";
 import { BrowserRouter } from "react-router-dom";
 
+
 const App = () => {
+
   return (
     <div className={styles.app}>
       <div>

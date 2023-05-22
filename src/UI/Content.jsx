@@ -3,12 +3,14 @@ import styles from "./CssModules/Content.module.css";
 import { ToDo } from "./ToDoList";
 import { UserManagment } from "./UserManagment";
 import { Users } from "./Users";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Calculator } from "./Calculator/Calculator";
+
+localStorage.setItem("usersState", JSON.stringify([]));
 
 const Content = () => {
   const UsersState = JSON.parse(localStorage.getItem("usersState"));
-  const [usersState, changeUsersList] = useState(UsersState);
+  const [usersState, changeUsersList] = useState([UsersState]);
   const [addUserNameState, changeUserName] = useState("");
 
   useEffect(() => {
